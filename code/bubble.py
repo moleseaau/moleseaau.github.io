@@ -54,9 +54,9 @@ df19['Year']=2019
 
 colors = {'Western Europe': 'Blue', 'Central and Eastern Europe': 'Magenta',
           'Australia and New Zealand': 'Purple', 'North America': 'Red',
-          'Latin America and Caribbean': 'Orange', 'Southern Asia': 'Black',
-          'Southeastern Asia': 'Brown', 'Eastern Asia': 'Grey',
-          'Middle East and Northern Africa': 'Green', 'Sub-Saharan Africa': 'LightBlue'}
+          'Latin America and Caribbean': 'DarkOrange', 'Southern Asia': 'CornflowerBlue',
+          'Southeastern Asia': 'Brown', 'Eastern Asia': 'LimeGreen',
+          'Middle East and Northern Africa': 'Green', 'Sub-Saharan Africa': 'SlateGrey'}
 
 df15_mean = df15.groupby(['Region']).mean()
 df15_mean = df15_mean.drop(columns=['Happiness Score', 'Standard Error', 'Dystopia Residual', 'Year'])
@@ -163,7 +163,7 @@ def bars():
     fig.update_xaxes(title_text="Explanatory Variables", row=2, col=1)
 
     fig.update_yaxes(title_text="Happiness Score", row=1, col=1)
-    fig.update_yaxes(title_text="", row=2, col=1)
+    fig.update_yaxes(title_text="Average Regional Value", row=2, col=1)
 
     fig.write_html("C:/Users/magnu/Documents/GitHub/moleseaau.github.io/docs/bars.html")
     fig.show()
@@ -234,7 +234,7 @@ def bubble():
     fig.show()
 
 
-bubble()
+#bubble()
 
 
 def spatial():
@@ -263,4 +263,4 @@ def spatial():
     fig.write_html("C:/Users/magnu/Documents/GitHub/moleseaau.github.io/docs/spatial.html")
     fig.show()
 
-spatial()
+#spatial()
