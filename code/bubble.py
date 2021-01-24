@@ -169,7 +169,7 @@ def bars():
     fig.show()
 
 
-bars()
+#bars()
 
 def bubble():
 
@@ -203,7 +203,7 @@ def bubble():
         yaxis_title='Life Expectancy',
         legend_title='<b>Different Regions<b>',
 
-        legend={'itemsizing': 'constant'},
+        legend=dict({'itemsizing': 'constant'}, bordercolor="Black", borderwidth=2),
 
         yaxis=dict(
             tickmode='linear',
@@ -230,11 +230,11 @@ def bubble():
                             yref="paper"
                             ))
 
-    fig.write_html("C:/Users/magnu/Documents/GitHub/moleseaau.github.io/docs/bubble.html")
+    #fig.write_html("C:/Users/magnu/Documents/GitHub/moleseaau.github.io/docs/bubble.html")
     fig.show()
 
 
-#bubble()
+bubble()
 
 
 def spatial():
