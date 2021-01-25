@@ -146,7 +146,7 @@ def bars():
     )
 
     fig.update_layout(barmode='group', legend_title='<b>Different Regions<b>',
-                      title='Countries Happiness Score & Regional Average Explanatory Variable Value',
+                      title='Bar Plots of World Happiness Report',
                       legend=dict(bordercolor="Black", borderwidth=2))
 
     fig.update_yaxes(showspikes=True,
@@ -165,11 +165,11 @@ def bars():
     fig.update_yaxes(title_text="Happiness Score", row=1, col=1)
     fig.update_yaxes(title_text="Average Regional Value", row=2, col=1)
 
-    fig.write_html("C:/Users/magnu/Documents/GitHub/moleseaau.github.io/docs/bars.html")
+    #fig.write_html("C:/Users/magnu/Documents/GitHub/moleseaau.github.io/docs/bars.html")
     fig.show()
 
 
-#bars()
+bars()
 
 def bubble():
 
@@ -198,7 +198,7 @@ def bubble():
 
 
     fig.update_layout(
-        title='Bubble Chart and Happiness Data',
+        title='Bubble Chart of World Happiness Report',
         xaxis_title='Country GDP',
         yaxis_title='Life Expectancy',
         legend_title='<b>Different Regions<b>',
@@ -257,10 +257,10 @@ def spatial():
     ))
 
     fig.update_layout(
-        title_text='World Map Showing Each Countries Happiness Score'
+        title_text='Spatial Map of World Happiness Report'
     )
 
-    fig.write_html("C:/Users/magnu/Documents/GitHub/moleseaau.github.io/docs/spatial.html")
+    #fig.write_html("C:/Users/magnu/Documents/GitHub/moleseaau.github.io/docs/spatial.html")
     fig.show()
 
-#spatial()
+spatial()
