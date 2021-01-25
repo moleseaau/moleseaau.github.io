@@ -18,14 +18,16 @@ df15['Country'] = df15['Country'].replace({'Palestinian Territories': 'Palestine
 df17 = df17.rename(columns={'Happiness.Score': 'Happiness Score', 'Economy..GDP.per.Capita.': 'Economy (GDP per Capita',
                             'Health..Life.Expectancy.': 'Health (Life Expectancy)', 'Happiness.Rank': 'Happiness Rank',
                             'Trust..Government.Corruption.': 'Trust (Government Corruption)'})
-df18 = df18.rename(columns={'Country or region': 'Country', 'Score': 'Happiness Score', 'Overall rank': 'Happiness Rank',
-                            'GDP per capita': 'Economy (GDP per Capita', 'Social support': 'Family',
-                            'Healthy life expectancy': 'Health (Life Expectancy)', 'Freedom to make life choices': 'Freedom',
-                            'Perceptions of corruption': 'Trust (Goverment Corruption)'})
-df19 = df19.rename(columns={'Country or region': 'Country', 'Score': 'Happiness Score', 'Overall rank': 'Happiness Rank',
-                            'GDP per capita': 'Economy (GDP per Capita', 'Social support': 'Family',
-                            'Healthy life expectancy': 'Health (Life Expectancy)', 'Freedom to make life choices': 'Freedom',
-                            'Perceptions of corruption': 'Trust (Goverment Corruption)'})
+df18 = df18.rename(
+    columns={'Country or region': 'Country', 'Score': 'Happiness Score', 'Overall rank': 'Happiness Rank',
+             'GDP per capita': 'Economy (GDP per Capita', 'Social support': 'Family',
+             'Healthy life expectancy': 'Health (Life Expectancy)', 'Freedom to make life choices': 'Freedom',
+             'Perceptions of corruption': 'Trust (Goverment Corruption)'})
+df19 = df19.rename(
+    columns={'Country or region': 'Country', 'Score': 'Happiness Score', 'Overall rank': 'Happiness Rank',
+             'GDP per capita': 'Economy (GDP per Capita', 'Social support': 'Family',
+             'Healthy life expectancy': 'Health (Life Expectancy)', 'Freedom to make life choices': 'Freedom',
+             'Perceptions of corruption': 'Trust (Goverment Corruption)'})
 
 df15 = df15.set_index('Country', drop=False)
 df16 = df16.set_index('Country', drop=False)
@@ -46,11 +48,11 @@ df17 = df17.set_index('Happiness Rank')
 df18 = df18.set_index('Happiness Rank')
 df19 = df19.set_index('Happiness Rank')
 
-df15['Year']=2015
-df16['Year']=2016
-df17['Year']=2017
-df18['Year']=2018
-df19['Year']=2019
+df15['Year'] = 2015
+df16['Year'] = 2016
+df17['Year'] = 2017
+df18['Year'] = 2018
+df19['Year'] = 2019
 
 colors = {'Western Europe': 'Blue', 'Central and Eastern Europe': 'Magenta',
           'Australia and New Zealand': 'Purple', 'North America': 'Red',
@@ -66,16 +68,14 @@ df_new = df_new[['Western Europe', 'North America', 'Australia and New Zealand',
                  'Southeastern Asia', 'Central and Eastern Europe', 'Eastern Asia',
                  'Sub-Saharan Africa', 'Southern Asia']]
 
-avg_happy_score15 = round((df15['Happiness Score'].sum(axis = 0, skipna=True)/(len(df15.index))), 2)
-
+avg_happy_score15 = round((df15['Happiness Score'].sum(axis=0, skipna=True) / (len(df15.index))), 2)
 
 
 def bars():
-
     fig = make_subplots(rows=2, cols=1, subplot_titles=['', ''])
 
     for i in df15['Region'].unique():
-        dfn = df15[df15['Region']==i]
+        dfn = df15[df15['Region'] == i]
         fig.add_trace(trace=go.Bar(x=dfn['Country'],
                                    y=dfn['Happiness Score'],
                                    name=i,
@@ -92,7 +92,7 @@ def bars():
                          x1=1, y1=avg_happy_score15,
                          line=dict(color="Black", dash='dot'), opacity=0.5)]
 
-    annotation = [dict(x=130, y=avg_happy_score15+0.3,
+    annotation = [dict(x=130, y=avg_happy_score15 + 0.3,
                        text="Average Happiness Score: 5.38",
                        showarrow=True, arrowhead=1)]
 
@@ -171,13 +171,13 @@ def bars():
 
 bars()
 
-def bubble():
 
+def bubble():
     fig = go.Figure()
 
     for i in df15['Region'].unique():
         dfn = df15[df15['Region'] == i]
-        size=dfn['Happiness Score']
+        size = dfn['Happiness Score']
         fig.add_trace(go.Scatter(x=dfn['Economy (GDP per Capita)'],
                                  y=dfn['Health (Life Expectancy)'],
                                  customdata=dfn['Country'],
@@ -189,13 +189,9 @@ def bubble():
                                  name=i,
                                  marker=dict(
                                      size=size,
-                                     sizeref=2.*max(size)/(6.**2),
+                                     sizeref=2. * max(size) / (6. ** 2),
                                      opacity=0.8)
                                  ))
-
-
-
-
 
     fig.update_layout(
         title='Bubble Chart of World Happiness Report',
@@ -218,10 +214,6 @@ def bubble():
         )
     )
 
-
-
-
-
     fig.add_annotation(dict(x=0.8,
                             y=1.1,
                             showarrow=False,
@@ -238,7 +230,6 @@ bubble()
 
 
 def spatial():
-
     fig = go.Figure()
 
     fig.add_trace(go.Choropleth(
@@ -247,7 +238,7 @@ def spatial():
         z=df15['Happiness Score'].astype(float),
         locationmode='country names',
         hovertemplate='<b>Country</b> : ' + df15['Country'] +
-                      '<br><b>Happiness Rank</b> : %{customdata}'+
+                      '<br><b>Happiness Rank</b> : %{customdata}' +
                       '<br><b>Happiness Score</b> : %{z:.2f}<extra></extra>',
         colorscale='Viridis',
         zauto=True,
@@ -262,5 +253,6 @@ def spatial():
 
     #fig.write_html("C:/Users/magnu/Documents/GitHub/moleseaau.github.io/docs/spatial.html")
     fig.show()
+
 
 spatial()
