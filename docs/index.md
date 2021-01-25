@@ -20,4 +20,5 @@ Add here links to the maps that you have created:
 
  - [Link to test map](https://automating-gis-processes.github.io/exercise-5-HTenkanen/test_map.html)
  - Replace this with your link
+ - [Link to Bar Idiom](https://github.com/moleseaau/moleseaau.github.io/tree/master/docs/bars.html)
 
