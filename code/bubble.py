@@ -169,7 +169,7 @@ def bars():
     fig.show()
 
 
-bars()
+#bars()
 
 
 def bubble():
@@ -226,7 +226,7 @@ def bubble():
     fig.show()
 
 
-bubble()
+#bubble()
 
 
 def spatial():
@@ -240,7 +240,7 @@ def spatial():
         hovertemplate='<b>Country</b> : ' + df15['Country'] +
                       '<br><b>Happiness Rank</b> : %{customdata}' +
                       '<br><b>Happiness Score</b> : %{z:.2f}<extra></extra>',
-        colorscale='Viridis',
+        colorscale='Greens',
         zauto=True,
         zmid=avg_happy_score15,
         colorbar=dict(title='Happiness<br>Score',
@@ -251,7 +251,7 @@ def spatial():
         title_text='Spatial Map of World Happiness Report'
     )
 
-    #fig.write_html("C:/Users/magnu/Documents/GitHub/moleseaau.github.io/docs/spatial.html")
+    fig.write_html("C:/Users/magnu/Documents/GitHub/moleseaau.github.io/docs/spatial.html")
     fig.show()
 
 
