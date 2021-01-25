@@ -78,6 +78,8 @@ def bars():
         dfn = df15[df15['Region'] == i]
         fig.add_trace(trace=go.Bar(x=dfn['Country'],
                                    y=dfn['Happiness Score'],
+                                   error_y=dict(type='data', array=df15['Standard Error'],
+                                                thickness=2, width=2),
                                    name=i,
                                    marker_color=colors[i],
                                    hovertemplate='<b>Region</b> : ' + dfn['Region'] +
@@ -255,4 +257,4 @@ def spatial():
     fig.show()
 
 
-spatial()
+#spatial()
