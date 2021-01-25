@@ -1,4 +1,8 @@
-# Entrance page
+# World Happiness Report Data Visualization
+
+On this page the visualizations described in the DataVis report can found as a HTML file. There, the visualizations interactive elements can be played around with. 
+
+
 
 To this page you should add links to your interactive html-maps that are located under your Exercise-5 repository like the following (*modify the username part* + *notice that **e**xercise starts with lower e -letter *):
 
