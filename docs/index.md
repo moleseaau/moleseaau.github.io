@@ -13,6 +13,6 @@ The constructed visualizations idioms should help with answering the following p
 ## Visualizations Idioms
 
  - [Link to test map](https://automating-gis-processes.github.io/exercise-5-HTenkanen/test_map.html)
- - [Link to Bar Idiom](https://moleseaau.github.io/tree/master/docs/bars.html)
+ - [Link to Bar Idiom](https://moleseaau.github.io/docs/bars.html)
  - [Link to Bubble Idiom](https://github.com/moleseaau/moleseaau.github.io/tree/master/docs/bubble.html)
  - [Link to Spatial Idiom](https://github.com/moleseaau/moleseaau.github.io/tree/master/docs/spatial.html)
