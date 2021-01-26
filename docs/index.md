@@ -1,10 +1,10 @@
-# World Happiness Report Data Visualization
+# World Happiness Report: Data Visualization
 
 On this page the visualizations described in the DataVis report can found as a HTML file. There, the visualizations interactive elements can be played around with. 
 
-## Problem Statements
+## Tasks
 
-The constructed visualizations idioms should help with answering the following problem statements
+The constructed visualizations idioms should help with answering the following tasks
 
 - What are the top 5 happiest countries in the world?
 - What factors seem to contribute towards these countries happiness score?
