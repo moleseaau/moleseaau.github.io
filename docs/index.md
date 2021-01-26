@@ -7,12 +7,11 @@ On this page the visualizations described in the DataVis report can found as a H
 The constructed visualizations idioms should help with answering the following problem statements
 
 - What are the top 5 happiest countries in the world?
+- What factors seem to contribute towards these countries happiness score?
 - Can a correlation between the region of the countries and their happiness score be found?
-- Do the explanatory variables actually seem to have any influence on the happiness score?
 
 ## Visualizations Idioms
 
- - [Link to test map](https://automating-gis-processes.github.io/exercise-5-HTenkanen/test_map.html)
- - [Link to Bar Idiom](https://moleseaau.github.io/docs/bars.html)
- - [Link to Bubble Idiom](https://github.com/moleseaau/moleseaau.github.io/tree/master/docs/bubble.html)
- - [Link to Spatial Idiom](https://github.com/moleseaau/moleseaau.github.io/tree/master/docs/spatial.html)
+ - [Link to Bar Idiom](https://moleseaau.github.io/bars.html)
+ - [Link to Bubble Idiom](https://moleseaau.github.io/bubble.html)
+ - [Link to Spatial Idiom](https://moleseaau.github.io/spatial.html)
