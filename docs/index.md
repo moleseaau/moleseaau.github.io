@@ -1,4 +1,4 @@
-# World Happiness Report Data Visualization
+# World Happiness Report: Data Visualization
 
 On this page the visualizations described in the DataVis report can found as a HTML file. There, the visualizations interactive elements can be played around with. 
 
