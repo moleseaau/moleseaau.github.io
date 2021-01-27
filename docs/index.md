@@ -1,6 +1,6 @@
 # World Happiness Report: Data Visualization
 
-On this page the visualizations described in the DataVis report can found as HTML files. Clicking the links below will open the idiom, where the visualizations interactive elements can be played around with. 
+On this page the visualizations described in the DataVis report can be found as HTML files. Clicking the links below will open the idiom, where the visualizations interactive elements can be played around with. 
 
 ## Tasks
 
