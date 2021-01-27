@@ -6,9 +6,9 @@ On this page the visualizations described in the [DataVis report](https://molese
 
 These tasks was constructed before designing the visualizations, and with the support of the idioms, these questions can be answered.
 
-- What are the  happiest countries in the world?
-- What factors seem to contribute towards these countries happiness score?
-- Can a correlation between the region of the countries and their happiness score be found?
+- Which are the happiest countries in the world?
+- Can a correlation between the countries region and their happiness score be found?
+- What factors seem to contribute toward or explain the countries happiness score?
 
 Furthermore, these adittionaly tasks were defined for the user test, to help get an understanding of the interactive elements in the visualizations.
 
