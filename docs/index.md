@@ -1,6 +1,6 @@
 # World Happiness Report: Data Visualization
 
-On this page the visualizations described in the DataVis report can be found as HTML files. Clicking the links below will open the idiom, where the visualizations interactive elements can be played around with. 
+On this page the visualizations described in the [DataVis report](https://moleseaau.github.io/DataVisExam.pdf) can be found as HTML files. Clicking the links below will open the idiom, where the visualizations interactive elements can be played around with. 
 
 ## Tasks
 
@@ -22,3 +22,4 @@ These tasks should be answerable only using the bar idiom, but support from the 
  - [Link to Bar Idiom](https://moleseaau.github.io/bars.html)
  - [Link to Bubble Idiom](https://moleseaau.github.io/bubble.html)
  - [Link to Spatial Idiom](https://moleseaau.github.io/spatial.html)
+
