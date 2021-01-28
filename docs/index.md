@@ -15,7 +15,7 @@ Furthermore, these adittionaly tasks were defined for the user test, to help get
 - What is the average happiness score?
 - At what rank does France lie on?
 
-These tasks should be answerable only using the bar idiom, but support from the bubble and spatial idiom can make these tasks easier. 
+All these tasks should be answerable only using the bar idiom, but support from the bubble and spatial idiom can make these tasks easier. 
 
 ## Visualizations Idioms
 
